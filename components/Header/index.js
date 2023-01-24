@@ -1,21 +1,47 @@
-import React from "react";
-import { Navbar, Text, Avatar } from "@nextui-org/react";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import React from 'react';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { useAccount } from 'wagmi';
+import {
+  Navbar,
+  Button,
+  Link,
+  Text,
+  Card,
+  Radio,
+  Avatar,
+} from '@nextui-org/react';
+
+function ConnectWallet({ show = 'always' }) {
+  const { isConnected } = useAccount();
+  if (
+    (show === 'connected' && !isConnected) ||
+    (show === 'disconnected' && isConnected)
+  )
+    return null;
+  return <ConnectButton />;
+}
 
 function Header() {
   return (
     <Navbar>
-      <Navbar.Brand>
-        <Avatar
-          src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-          size="sm"
-        />
-        <Text b hideIn="xs" css={{ pl: "$8" }}>
-          Yusuf
+      <Navbar.Brand className="justify-between">
+        <Avatar text="JR" size="md" />
+        <Text b color="inherit" hideIn="xs" className="p-4">
+          ACME
         </Text>
       </Navbar.Brand>
+      <Navbar.Content hideIn="xs">
+        <Navbar.Link href="#">Features</Navbar.Link>
+        <Navbar.Link isActive href="#">
+          Customers
+        </Navbar.Link>
+        <Navbar.Link href="#">Pricing</Navbar.Link>
+        <Navbar.Link href="#">Company</Navbar.Link>
+      </Navbar.Content>
       <Navbar.Content>
-        <ConnectButton></ConnectButton>
+        <Navbar.Item>
+          <ConnectWallet />
+        </Navbar.Item>
       </Navbar.Content>
     </Navbar>
   );
