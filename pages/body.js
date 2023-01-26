@@ -23,6 +23,7 @@ import {
   STORAGE_ABI,
 } from '../constants/simpleStorage';
 import Carousel from '../components/carousel';
+import Timeline from '../components/Timeline';
 function SetValue({ value }) {
   const { data: signer } = useSigner();
 
@@ -140,7 +141,6 @@ export default function Body() {
           </div>
         </div>
       </section>
-
       <section className="my-8 dark:bg-gray-800 dark:text-gray-100  items-center">
         <div className="container flex flex-col items-center p-4 mx-auto space-y-6 md:p-8">
           <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
@@ -173,7 +173,8 @@ export default function Body() {
       </section>
       <section>
         <Carousel></Carousel>
-      </section>
+      </section>{' '}
+      <Timeline></Timeline>
     </div>
   );
 }
