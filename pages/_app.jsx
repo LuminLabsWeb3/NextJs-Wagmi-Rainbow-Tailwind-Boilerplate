@@ -1,26 +1,35 @@
-import "../styles/globals.css";
-import "@rainbow-me/rainbowkit/styles.css";
-import { RainbowKitProvider, getDefaultWallets } from "@rainbow-me/rainbowkit";
-import { configureChains, createClient, WagmiConfig } from "wagmi";
-import { goerli } from "wagmi/chains";
-import { alchemyProvider } from "wagmi/providers/alchemy";
-import { publicProvider } from "wagmi/providers/public";
-import { ThemeProvider } from "next-themes";
+import '../styles/globals.css';
+import '@rainbow-me/rainbowkit/styles.css';
+import { RainbowKitProvider, getDefaultWallets } from '@rainbow-me/rainbowkit';
+import { configureChains, createClient, WagmiConfig } from 'wagmi';
+import { goerli } from 'wagmi/chains';
+import { alchemyProvider } from 'wagmi/providers/alchemy';
+import { publicProvider } from 'wagmi/providers/public';
+import { ThemeProvider } from 'next-themes';
+import { useState, useEffect } from 'react';
+import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 
-const { chains, provider, webSocketProvider } = configureChains(
+console.log(process.env.ALCHEMY_API_KEY);
+console.log(process.env.ALCHEMY_API_KEY !== '' && process.env.ALCHEMY_API_KEY);
+const { chains, provider } = configureChains(
   [goerli],
   [
     alchemyProvider({
-      // This is Alchemy's default API key.
-      // You can get your own at https://dashboard.alchemyapi.io
-      apiKey: "ObOfHYwOgiSg7QBi9p8vXW_mtSoO6qDW",
+      apiKey: 'ObOfHYwOgiSg7QBi9p8vXW_mtSoO6qDW',
     }),
     publicProvider(),
+    jsonRpcProvider({
+      rpc: (chain) => {
+        return {
+          http: `${chain.rpcUrls.default}`,
+        };
+      },
+    }),
   ]
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "RainbowKit App",
+  appName: 'RainbowKit App',
   chains,
 });
 
@@ -28,16 +37,21 @@ const wagmiClient = createClient({
   autoConnect: true,
   connectors,
   provider,
-  webSocketProvider,
 });
 
 function MyApp({ Component, pageProps }) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
+
   return (
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
-        <ThemeProvider theme={{ type: "dark" }}>
-          <Component {...pageProps} />
-        </ThemeProvider>
+      <RainbowKitProvider
+        chains={chains}
+        initialChain={goerli}
+        showRecentTransactions={true}
+      >
+        <Component {...pageProps} />
       </RainbowKitProvider>
     </WagmiConfig>
   );
