@@ -9,8 +9,6 @@ import { ThemeProvider } from 'next-themes';
 import { useState, useEffect } from 'react';
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 
-console.log(process.env.ALCHEMY_API_KEY);
-console.log(process.env.ALCHEMY_API_KEY !== '' && process.env.ALCHEMY_API_KEY);
 const { chains, provider } = configureChains(
   [goerli],
   [

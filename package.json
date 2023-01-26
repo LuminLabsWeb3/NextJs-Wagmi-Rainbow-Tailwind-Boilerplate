@@ -30,5 +30,17 @@
     "eslint-config-next": "^12.1.6",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "next/core-web-vitals",
+      "plugin:@typescript-eslint/strict",
+      "plugin:jsx-a11y/recommended",
+      "plugin:prettier/recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended",
+      "plugin:tailwindcss/recommended"
+    ]
   }
 }
