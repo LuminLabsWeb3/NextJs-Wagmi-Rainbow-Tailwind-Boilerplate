@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function Timeline() {
   return (
-    <section className="text-gray-600 body-font">
+    <section id="roadmap" className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto flex flex-wrap">
         <div className="flex flex-wrap w-full">
           <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-lime-800 sm:text-4xl sm:leading-none">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-lime-600 sm:text-4xl sm:leading-none">
               THE ROADMAP
             </h2>
             <div className="flex relative pb-12">
@@ -29,10 +29,10 @@ export default function Timeline() {
                 </svg>
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                <h2 className="font-medium title-font text-sm text-gray-400 mb-1 tracking-wider">
                   STEP 1
                 </h2>
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-white">
                   BAYC gets its own YouTube channel, BAYC LoFi Radio - Beats to
                   Ape into Shitcoins To.
                 </p>
@@ -58,10 +58,10 @@ export default function Timeline() {
                 </svg>
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                <h2 className="font-medium title-font text-sm text-gray-400 mb-1 tracking-wider">
                   STEP 2
                 </h2>
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-white">
                   Member-Exclusive BAYC Merch Store gets unlocked, featuring
                   Limited Edition tees, hoodies, and other goodies.
                 </p>
@@ -88,10 +88,10 @@ export default function Timeline() {
                 </svg>
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                <h2 className="font-medium title-font text-sm text-gray-400 mb-1 tracking-wider">
                   STEP 3
                 </h2>
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-white">
                   The clubhouse image becomes interactive and the Mysterious
                   Note becomes legible, beginning a treasure hunt. The first to
                   solve the mystery will be rewarded 5 ETH and a Bored Ape.
@@ -119,10 +119,10 @@ export default function Timeline() {
                 </svg>
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                <h2 className="font-medium title-font text-sm text-gray-400 mb-1 tracking-wider">
                   STEP 4
                 </h2>
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-white">
                   The Bored Ape liquidity pool is initiated.
                 </p>
               </div>
@@ -145,10 +145,10 @@ export default function Timeline() {
                 </svg>
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                <h2 className="font-medium title-font text-sm text-gray-400 mb-1 tracking-wider">
                   FINISH
                 </h2>
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-white">
                   The Mutant Ape (NFT Breeding) Arcade Machine gets ﬁxed. And we
                   cook up new ways to ape with our friends
                 </p>

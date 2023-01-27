@@ -7,7 +7,7 @@ export function Hero() {
         <div className="flex flex-col justify-center">
           <div className="max-w-xl mb-6">
             <div></div>
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-lime-800 sm:text-4xl sm:leading-none">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-lime-600 sm:text-4xl sm:leading-none">
               WELCOME TO THE
               <br className="hidden md:block" />
               BORED APE&nbsp;

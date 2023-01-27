@@ -98,15 +98,18 @@ export default function Body() {
   return (
     <div>
       <Hero></Hero>
-      <section className="my-8 dark:bg-gray-800 dark:text-gray-100  items-center">
+      <section
+        id="about"
+        className="my-8 dark:bg-gray-800 dark:text-gray-100 items-center"
+      >
         <div className="container flex flex-col items-center p-4 mx-auto space-y-6 md:p-8">
-          <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+          <h1 className="mb-4 text-3xl font-extrabold text-gray-300 dark:text-white md:text-5xl lg:text-6xl">
             About the&nbsp;
             <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
               Collection
             </span>
           </h1>
-          <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400 text-center">
+          <p className="text-lg font-normal text-white lg:text-xl dark:text-gray-400 text-center">
             BAYC is a collection of 10,000 Bored Ape NFTs—unique digital
             collectibles living on the Ethereum blockchain. Your Bored Ape
             doubles as your Yacht Club membership card, and grants access to
@@ -124,7 +127,7 @@ export default function Body() {
           </div>
         </div>
       </section>
-      <section>
+      <section id="collection" className="h-screen">
         <Carousel></Carousel>
       </section>{' '}
       <Timeline></Timeline>
