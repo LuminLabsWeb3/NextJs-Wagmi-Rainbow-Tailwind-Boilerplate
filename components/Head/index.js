@@ -1,7 +1,7 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
 
-export default function CustomHead(params) {
+export function CustomHead(params) {
   return (
     <Head>
       <title>RainbowKit App</title>

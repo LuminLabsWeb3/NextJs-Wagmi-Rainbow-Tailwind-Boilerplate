@@ -12,10 +12,10 @@ import { Text, Button, useInput } from '@nextui-org/react';
 import {
   STORAGE_CONTRACT_ADDRESS,
   STORAGE_ABI,
-} from '../constants/simpleStorage';
-import Carousel from '../components/Carousel';
-import Timeline from '../components/Timeline';
-import { Hero } from '../components/Hero';
+} from '../../constants/simpleStorage';
+import Carousel from '../Carousel';
+import Timeline from '../Timeline';
+import { Hero } from '../Hero';
 function SetValue({ value }) {
   const { data: signer } = useSigner();
 
