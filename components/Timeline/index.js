@@ -6,6 +6,9 @@ export default function Timeline() {
       <div className="container px-5 py-24 mx-auto flex flex-wrap">
         <div className="flex flex-wrap w-full">
           <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-lime-800 sm:text-4xl sm:leading-none">
+              THE ROADMAP
+            </h2>
             <div className="flex relative pb-12">
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none" />
@@ -30,8 +33,8 @@ export default function Timeline() {
                   STEP 1
                 </h2>
                 <p className="leading-relaxed">
-                  VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                  bespoke try-hard cliche palo santo offal.
+                  BAYC gets its own YouTube channel, BAYC LoFi Radio - Beats to
+                  Ape into Shitcoins To.
                 </p>
               </div>
             </div>
@@ -59,8 +62,8 @@ export default function Timeline() {
                   STEP 2
                 </h2>
                 <p className="leading-relaxed">
-                  Vice migas literally kitsch +1 pok pok. Truffaut hot chicken
-                  slow-carb health goth, vape typewriter.
+                  Member-Exclusive BAYC Merch Store gets unlocked, featuring
+                  Limited Edition tees, hoodies, and other goodies.
                 </p>
               </div>
             </div>
@@ -89,8 +92,9 @@ export default function Timeline() {
                   STEP 3
                 </h2>
                 <p className="leading-relaxed">
-                  Coloring book nar whal glossier master cleanse umami. Salvia
-                  +1 master cleanse blog taiyaki.
+                  The clubhouse image becomes interactive and the Mysterious
+                  Note becomes legible, beginning a treasure hunt. The first to
+                  solve the mystery will be rewarded 5 ETH and a Bored Ape.
                 </p>
               </div>
             </div>
@@ -119,8 +123,7 @@ export default function Timeline() {
                   STEP 4
                 </h2>
                 <p className="leading-relaxed">
-                  VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                  bespoke try-hard cliche palo santo offal.
+                  The Bored Ape liquidity pool is initiated.
                 </p>
               </div>
             </div>
@@ -146,17 +149,59 @@ export default function Timeline() {
                   FINISH
                 </h2>
                 <p className="leading-relaxed">
-                  Pitchfork ugh tattooed scenester echo park gastropub whatever
-                  cold-pressed retro.
+                  The Mutant Ape (NFT Breeding) Arcade Machine gets ﬁxed. And we
+                  cook up new ways to ape with our friends
                 </p>
               </div>
             </div>
           </div>
-          <img
-            className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-            src="https://dummyimage.com/1200x500"
-            alt="step"
-          />
+          <div className="grid grid-cols-3 grid-rows-3 grid-flow-col gap-4 lg:w-3/5 md:w-1/2 object-cover object-center">
+            <img
+              alt="BAYC1"
+              src="https://dl.openseauserdata.com/cache/originImage/files/b15eaf4d8ba9efdd6b3e8e1a90645bef.png"
+              className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+            />{' '}
+            <img
+              alt="BAYC2"
+              src="https://dl.openseauserdata.com/cache/originImage/files/ebf7d6c0b1b9e202c8d45f6cadbe0903.png"
+              className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+            />{' '}
+            <img
+              alt="BAYC3"
+              src="https://dl.openseauserdata.com/cache/originImage/files/f8aacb9666d727b2277547e13053ed42.png"
+              className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+            />{' '}
+            <img
+              alt="BAYC4"
+              src="https://dl.openseauserdata.com/cache/originImage/files/1209484a03daa2aff22e8866234233dd.png"
+              className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+            />{' '}
+            <img
+              alt="BAYC5"
+              src="https://dl.openseauserdata.com/cache/originImage/files/23c568a49b5fb2ca1eb9a10614d4ce44.png"
+              className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+            />{' '}
+            <img
+              alt="BAYC6"
+              src="https://dl.openseauserdata.com/cache/originImage/files/356e9aaaadf7730e935be6dea2ebd19d.png"
+              className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+            />{' '}
+            <img
+              alt="BAYC7"
+              src="https://dl.openseauserdata.com/cache/originImage/files/e64526c6f2a38b40664cea1aca4e8f85.png"
+              className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+            />{' '}
+            <img
+              alt="BAYC8"
+              src="https://dl.openseauserdata.com/cache/originImage/files/525d24e6d1600d41e3abe4a7e2fdf31b.png"
+              className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+            />{' '}
+            <img
+              alt="BAYC9"
+              src="https://dl.openseauserdata.com/cache/originImage/files/15a87f3c6c81eb8a8843fbb06656f8ae.png"
+              className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+            />{' '}
+          </div>
         </div>
       </div>
     </section>

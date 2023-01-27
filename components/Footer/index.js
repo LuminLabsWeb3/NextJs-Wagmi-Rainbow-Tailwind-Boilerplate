@@ -1,7 +1,7 @@
 import React from 'react';
 function MyFooter() {
   return (
-    <footer aria-label="Site Footer" className="bg-white">
+    <footer aria-label="Site Footer">
       <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div className="lg:flex lg:items-start lg:gap-8">
           <div className="text-teal-600">
@@ -20,10 +20,10 @@ function MyFooter() {
           <div className="grid grid-cols-2 gap-8 mt-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
             <div className="col-span-2">
               <div>
-                <h2 className="text-2xl font-bold text-gray-900">
+                <h2 className="text-2xl font-bold text-gray-500">
                   Get the latest news!
                 </h2>
-                <p className="mt-4 text-gray-500">
+                <p className="mt-4 text-white">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
                   non cupiditate quae nam molestias.
                 </p>
@@ -34,27 +34,31 @@ function MyFooter() {
                 <label htmlFor="UserEmail" className="sr-only">
                   Email
                 </label>
-                <div className="p-2 border border-gray-100 focus-within:ring sm:flex sm:items-center sm:gap-4">
+                <div
+                  className="p-2 border border-black focus-within:ring sm:flex sm:items-center sm:gap-4"
+                  style={{ backgroundColor: '#121212' }}
+                >
                   <input
                     type="email"
                     id="UserEmail"
                     placeholder="john@rhcp.com"
                     className="w-full border-none focus:border-transparent focus:ring-transparent sm:text-sm"
+                    style={{ backgroundColor: '#121212' }}
                   />
-                  <button className="w-full px-6 py-3 mt-1 text-sm font-bold tracking-wide text-white uppercase transition-none bg-teal-500 hover:bg-teal-600 sm:mt-0 sm:w-auto sm:flex-shrink-0">
+                  <button className="w-full px-6 py-3 mt-1 text-sm font-bold tracking-wide text-white uppercase transition-none bg-slate-500 hover:bg-slate-400 sm:mt-0 sm:w-auto sm:flex-shrink-0">
                     Sign Up
                   </button>
                 </div>
               </form>
             </div>
             <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium text-gray-900">Services</p>
+              <p className="font-medium text-gray-500">Services</p>
               <nav aria-label="Footer Navigation - Services" className="mt-6">
                 <ul className="space-y-4 text-sm">
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       1on1 Coaching
                     </a>
@@ -62,7 +66,7 @@ function MyFooter() {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       Company Review
                     </a>
@@ -70,7 +74,7 @@ function MyFooter() {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       Accounts Review
                     </a>
@@ -78,7 +82,7 @@ function MyFooter() {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       HR Consulting
                     </a>
@@ -86,7 +90,7 @@ function MyFooter() {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       SEO Optimisation
                     </a>
@@ -95,13 +99,13 @@ function MyFooter() {
               </nav>
             </div>
             <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium text-gray-900">Company</p>
+              <p className="font-medium text-gray-500">Company</p>
               <nav aria-label="Footer Navigation - Company" className="mt-6">
                 <ul className="space-y-4 text-sm">
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       About
                     </a>
@@ -109,7 +113,7 @@ function MyFooter() {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       Meet the Team
                     </a>
@@ -117,7 +121,7 @@ function MyFooter() {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       Accounts Review
                     </a>
@@ -126,13 +130,13 @@ function MyFooter() {
               </nav>
             </div>
             <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium text-gray-900">Helpful Links</p>
+              <p className="font-medium text-gray-500">Helpful Links</p>
               <nav aria-label="Footer Navigation - Company" className="mt-6">
                 <ul className="space-y-4 text-sm">
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       Contact
                     </a>
@@ -140,7 +144,7 @@ function MyFooter() {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       FAQs
                     </a>
@@ -148,7 +152,7 @@ function MyFooter() {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       Live Chat
                     </a>
@@ -157,13 +161,13 @@ function MyFooter() {
               </nav>
             </div>
             <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium text-gray-900">Legal</p>
+              <p className="font-medium text-gray-500">Legal</p>
               <nav aria-label="Footer Navigation - Legal" className="mt-6">
                 <ul className="space-y-4 text-sm">
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       Accessibility
                     </a>
@@ -171,7 +175,7 @@ function MyFooter() {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       Returns Policy
                     </a>
@@ -179,7 +183,7 @@ function MyFooter() {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       Refund Policy
                     </a>
@@ -187,7 +191,7 @@ function MyFooter() {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       Hiring Statistics
                     </a>
@@ -196,13 +200,13 @@ function MyFooter() {
               </nav>
             </div>
             <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium text-gray-900">Downloads</p>
+              <p className="font-medium text-gray-500">Downloads</p>
               <nav aria-label="Footer Navigation - Downloads" className="mt-6">
                 <ul className="space-y-4 text-sm">
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       Marketing Calendar
                     </a>
@@ -210,7 +214,7 @@ function MyFooter() {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-700 transition hover:opacity-75"
+                      className="text-white transition hover:opacity-75"
                     >
                       SEO Infographics
                     </a>
@@ -224,7 +228,7 @@ function MyFooter() {
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className="text-white transition hover:opacity-75"
                 >
                   <span className="sr-only">Facebook</span>
                   <svg
@@ -246,7 +250,7 @@ function MyFooter() {
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className="text-white transition hover:opacity-75"
                 >
                   <span className="sr-only">Instagram</span>
                   <svg
@@ -268,7 +272,7 @@ function MyFooter() {
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className="text-white transition hover:opacity-75"
                 >
                   <span className="sr-only">Twitter</span>
                   <svg
@@ -286,7 +290,7 @@ function MyFooter() {
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className="text-white transition hover:opacity-75"
                 >
                   <span className="sr-only">GitHub</span>
                   <svg
@@ -308,7 +312,7 @@ function MyFooter() {
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className="text-white transition hover:opacity-75"
                 >
                   <span className="sr-only">Dribbble</span>
                   <svg

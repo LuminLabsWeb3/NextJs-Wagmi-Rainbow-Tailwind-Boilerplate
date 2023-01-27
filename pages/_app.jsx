@@ -5,7 +5,6 @@ import { configureChains, createClient, WagmiConfig } from 'wagmi';
 import { goerli } from 'wagmi/chains';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
-import { ThemeProvider } from 'next-themes';
 import { useState, useEffect } from 'react';
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 
