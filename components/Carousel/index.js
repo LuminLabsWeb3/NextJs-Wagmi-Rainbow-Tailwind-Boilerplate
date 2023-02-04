@@ -129,7 +129,6 @@ const Carousel = () => {
                 >
                   <div className="pt-7">
                     {Object.entries(resource.traits).map((trait, index) => {
-                      console.log(trait[0], trait[1]);
                       return (
                         <h5
                           key={index}

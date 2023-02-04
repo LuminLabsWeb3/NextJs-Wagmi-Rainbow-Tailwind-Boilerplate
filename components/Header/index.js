@@ -35,7 +35,7 @@ function Header() {
                 <li>
                   <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#about"
+                    href="/#about"
                   >
                     About
                   </Link>
@@ -43,7 +43,7 @@ function Header() {
                 <li>
                   <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#collection"
+                    href="/#collection"
                   >
                     Collection
                   </Link>
@@ -51,7 +51,7 @@ function Header() {
                 <li>
                   <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#roadmap"
+                    href="/#roadmap"
                   >
                     Roadmap
                   </Link>
@@ -59,9 +59,25 @@ function Header() {
                 <li>
                   <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#subscribe"
+                    href="/#subscribe"
                   >
                     Subscribe
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-gray-500 transition hover:text-gray-500/75"
+                    href="/mint"
+                  >
+                    Mint
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-gray-500 transition hover:text-gray-500/75"
+                    href="/wallet"
+                  >
+                    Wallet
                   </Link>
                 </li>
               </ul>
