@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/45846424/225300331-7c2b1b75-a8bc-42d9-8d3b-d1b139c073d5.png)
+
 This is a [RainbowKit](https://rainbowkit.com) + [wagmi](https://wagmi.sh) + [Next.js](https://nextjs.org/) project bootstrapped with [`create-rainbowkit`](https://github.com/rainbow-me/rainbowkit/tree/main/packages/create-rainbowkit).
 
 ## Getting Started
